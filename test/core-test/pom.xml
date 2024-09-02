@@ -26,6 +26,22 @@
     <modelVersion>4.0.0</modelVersion>
     <name>nacos-core-test ${project.version}</name>
     <url>https://nacos.io</url>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.cenqua.clover</groupId>
+        <artifactId>clover</artifactId>
+        <!-- Use the version needed by maven-clover-plugin -->
+        <version>3.0.2</version>
+      </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.1-jre</version>
+    </dependency>
+    </dependencies>
+  </dependencyManagement>
     
     <artifactId>core-test</artifactId>
     
